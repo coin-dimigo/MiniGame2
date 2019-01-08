@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello Cocos2d-JS</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="display:flex; flex-direction: row">   
+    <div class="main">
+        <canvas id="gameCanvas" width="800" height="450"></canvas>
+    </div>
+    <div id="section">
+        <p id="score1">0</p>
+        <p id="score2">0</p>
+    </div>
+    
+    
+    <script type="text/javascript" src="cocos2d-js-v3.13.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="game.js"></script>
+    <script type="text/javascript" src="keyinput.js"></script>
+    <script type="text/javascript" src="ui.js"></script>
+    <script type="text/javascript">
+        var keyboards = {
+            W:false,
+            A:false,
+            S:false,
+            D:false,
+            left:false,
+            up:false,
+            down:false,
+            right:false
+        }
+        const SPEED = 3.7;
+        const BLOCK_WIDTH = 20;
+        const BLOCK_HEIGHT = 20;
+        var score1=0, score2=0;
+
+        window.onload = function(){
+            initInput();
+            initUI();
+            game();
+        };
+    </script>
+</body>
+</html>
