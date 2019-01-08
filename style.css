@@ -1,19 +1,27 @@
 p{
-    font-size: 3rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 900;
     text-align: center;
 }
+#score1,#score2,#time{
+    font-size: 5rem;
+}
+
 #score1{
-    color: #ff00ff;
+    color: #fff;
 }
 #score2{
-    color:#00ffff;
+    color:#fff;
 }
 .main{
     margin: 10px;
 }
 #section{
     width: 100%;
+}
+#section>*{
+    padding: 30px;
+    margin: 20px;
 }
 body{
     margin: 0;

@@ -3,5 +3,6 @@
     "frameRate"     : 60,
     "id"            : "gameCanvas",
     "renderMode"    : 1,
+    "showFPS"     : false,
     "jsList"        : ["game.js", "keyinput.js", "ui.js"]
 }

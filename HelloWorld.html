@@ -7,11 +7,12 @@
 </head>
 <body style="display:flex; flex-direction: row">   
     <div class="main">
-        <canvas id="gameCanvas" width="800" height="450"></canvas>
+        <canvas id="gameCanvas" width="2000" height="1000"></canvas>
     </div>
     <div id="section">
-        <p id="score1">0</p>
-        <p id="score2">0</p>
+        <p>P1<p id="score1">000</p></p>
+        <p>P2<p id="score2">000</p></p>
+        <p id="time">40</p>
     </div>
     
     
@@ -34,12 +35,38 @@
         const BLOCK_WIDTH = 30;
         const BLOCK_HEIGHT = 30;
         var score1=0, score2=0;
+        var map_layer;
+        var isPlaying=false;
+        var lastTime_ = new Date();
+        
+        let color_ = {
+            R: Math.floor(Math.random()*255),
+            G: 30,
+            B: Math.floor(Math.random()*255)
+        }
+
+        var color1;
+        var color2; 
 
         window.onload = function(){
+            
+            color_ = {
+                R: Math.floor(Math.random()*255),
+                G: 30,
+                B: Math.floor(Math.random()*255)
+            }
+            color1= cc.color(color_.R,color_.G,color_.B);
+            color2 = cc.color(255-color_.R, 255-color_.G, 255-color_.B);
+
+            a1 = document.getElementById("score1");
+            a2 = document.getElementById("score2");
+            a3 = document.getElementById("time");
             initInput();
-            initUI();
+            // initUI();
             game();
         };
+
+        
     </script>
 </body>
 </html>
