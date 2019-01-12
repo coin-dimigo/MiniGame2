@@ -13,7 +13,7 @@ function game(){
                     size = cc.director.getWinSize();
                     p1 = cc.Sprite.create("p1.png");
                     p1.setPosition(size.width / 2, size.height / 2);
-                    p1.setScale(0.3);
+                    p1.setScale(0.6);
                     this.addChild(p1, 4);
 
                     var label = cc.LabelTTF.create("P1", "Arial", 40);
@@ -23,7 +23,7 @@ function game(){
 
                     p2 = cc.Sprite.create("p2.png");
                     p2.setPosition(size.width / 2, size.height / 2);
-                    p2.setScale(0.3);
+                    p2.setScale(0.6);
                     this.addChild(p2, 4);
 
                     var label2 = cc.LabelTTF.create("P2", "Arial", 40);
@@ -185,7 +185,7 @@ function game(){
                         if( score1 > score2 ) alert("player 1 win")
                         else if( score2 > score1 ) alert("player 2 win")
                         else alert("draw")
-                    }, 40000);
+                    }, 100000);
 
                     
                 },

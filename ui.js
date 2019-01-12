@@ -29,7 +29,7 @@ function addScore2( n ){
 
 function timeCheck(){
     let currentTime = new Date();
-    let gapTime = Math.floor( 40-(currentTime.getTime() - lastTime_.getTime()) / 1000);
+    let gapTime = Math.floor( 100-(currentTime.getTime() - lastTime_.getTime()) / 1000);
     a3.innerHTML = gapTime;
 }
 

@@ -7,12 +7,12 @@
 </head>
 <body style="display:flex; flex-direction: row">   
     <div class="main">
-        <canvas id="gameCanvas" width="2000" height="1000"></canvas>
+        <canvas id="gameCanvas" width="1800" height="1100"></canvas>
     </div>
     <div id="section">
-        <p>P1<p id="score1">000</p></p>
-        <p>P2<p id="score2">000</p></p>
-        <p id="time">40</p>
+        <p>P1(WASD)<p id="score1">000</p></p>
+        <p>P2(방향키)<p id="score2">000</p></p>
+        <p id="time">100</p>
     </div>
     
     
@@ -31,9 +31,9 @@
             down:false,
             right:false
         }
-        const SPEED = 3.7;
-        const BLOCK_WIDTH = 30;
-        const BLOCK_HEIGHT = 30;
+        const SPEED = 5.4;
+        const BLOCK_WIDTH = 55;
+        const BLOCK_HEIGHT = 55;
         var score1=0, score2=0;
         var map_layer;
         var isPlaying=false;
